@@ -1,29 +1,29 @@
-package bai2_5;
-
 public class Customer {
-    private int ID;
-    private String name;
-    private char gender;
+ int id ;
+ String name;
+ int discount;
 
-    public Customer(int ID, String name, char gender) {
-        this.ID = ID;
-        this.name = name;
-        this.gender = gender;
-    }
 
-    public int getID() {
-        return ID;
-    }
+public Customer(int id, String name, int discount)
+{
+  this.id = id;
+  this.name= name;
+  this.discount= discount;
+}
+public int getId(){
+    return id;
+}
+public String getName() {
+    return name;
+}
 
-    public String getName() {
-        return name;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public String toString() {
-        return String.format("%s(%s)", name, ID);
-    }
+public void setDiscount(int discount) {
+    this.discount = discount;
+}
+public int getDiscount() {
+    return discount;
+}
+public String toString(){
+    return "Customer[id=" + id + ",name=" + name + ",discount=" + discount + "]";
+}
 }
