@@ -51,3 +51,4 @@ public class MyRectangle {
                ", width=" + getWidth() + ", height=" + getHeight() + "]";
     }
 }
+                                            
